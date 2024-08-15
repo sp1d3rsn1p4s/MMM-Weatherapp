@@ -1,0 +1,152 @@
+.MMM-Weatherapp {
+  max-width: 300px;
+  width: 100%; /* Set to 100% to ensure it takes full width of the parent container */
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+
+.weather-info {
+  font-family: 'Arial', sans-serif;
+}
+
+.icon-and-temp {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.weather-icon img {
+  width: 100px;
+  height: 100px;
+  align-items: center;
+}
+
+.weather-temperature {
+  font-size: 35px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.weather-description {
+  font-size: 18px;
+  margin-top: 5px;
+  text-transform: capitalize;
+}
+
+.weather-wind, .rain-chance, .humidity, .temp-high-low {
+  font-size: 16px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 1px; /* Increase gap for better spacing */
+}
+
+.low-temp {
+  color: rgb(59, 126, 226);  /* Color for low temperature, change as desired */
+}
+
+.high-temp {
+  color: red;  /* Color for high temperature, change as desired */
+}
+
+.rain-chance img, .weather-wind img {
+  width: 25px;
+  height: 25px;
+  margin-right: 0.1px !important;
+  vertical-align: middle;  /* This will vertically center the icon with the text */
+}
+
+.humidity img {
+  width: 30px;
+  height: 30px;
+  margin-right: 0.1px !important;
+  vertical-align: middle;  /* This will vertically center the icon with the text */
+}
+
+.weather-details {
+  font-size: 16px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.weather-alerts {
+  margin-top: 10px;
+  border: 1px solid red;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.1);
+  max-height: 50px; /* Adjust the maximum height as needed */
+  max-width: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;  /* Makes the overflow content scrollable */
+  white-space: nowrap;
+}
+
+.alert-title {
+  font-weight: bold;
+  color: red;
+}
+
+.alert-description {
+  margin-top: 3px;
+  font-size: 10px;
+}
+
+.hourly-forecast, .daily-forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+  border-top: 2px solid #ccc;  /* example border */
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.forecast-hour, .forecast-day {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.hour-time, .day-name {
+  font-weight: bold;
+}
+
+.hour-temp, .day-temp {
+  margin-top: 10px;
+}
+
+.hour-rain img, .day-rain img {
+  width: 25px;
+  height: 25px;
+  margin-right: -5px !important;
+  margin-left: -5px;
+  vertical-align: middle;  /* This will vertically center the icon with the text */
+}
+
+.rain-percentage {
+  font-size: 14px;
+}
+
+.hourly-forecast .forecast-hour img:not(.hour-rain img),
+.daily-forecast .forecast-day img:not(.day-rain img){
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;  /* This will vertically center the icon with the text */
+}
+
+.temp-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
